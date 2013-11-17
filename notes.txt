@@ -1,0 +1,9 @@
+/* Some input from net */
+
+>Collinear here doesn't really make sense unless you fix on 2 points to begin with. So to say, "find all collinear points in a given set" doesn't make much sense in my opinion, unless you fix on 2 points and test the others to see if they're collinear.
+
+Maybe a better question is, what is the maximum number of collinear points in the given set? In that case, you could fix on 2 points (just use 2 loops), then loop over the other points and check that the slope matches between the fixed points and the other points
+
+>If you can come up with a better than O(N^2) algorithm, you can publish it!
+
+This problem is 3-SUM Hard, and whether there is a sub-quadratic algorithm (i.e. better than O(N^2)) for it is an open problem. Many common computational geometry problems (including yours) have been shown to be 3SUM hard and this class of problems is growing. Like NP-Hardness, the concept of 3SUM-Hardness has proven useful in proving 'toughness' of some problems
